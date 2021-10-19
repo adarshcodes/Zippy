@@ -1,0 +1,96 @@
+.header-section {
+	background: url("../../assets/header.jpg") no-repeat;
+	background-size: cover;
+	height: 90vh;
+	padding-top: 3rem !important;
+	@include super-padding;
+
+	.nav-bar {
+		@include flex-row;
+		justify-content: space-between;
+		align-items: flex-end;
+		color: $color-white;
+	}
+
+	.nav-icon {
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: 3rem;
+	}
+
+	.navigation-list {
+		@include flex-row;
+
+		&--items {
+			font-size: 1.5rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: all 0.2s;
+
+			&:not(:last-child) {
+				margin-right: 2.5rem;
+			}
+
+			&:hover {
+				color: $color-yellow;
+			}
+		}
+	}
+
+	.header-content {
+		margin-top: 10rem;
+		color: $color-white;
+
+		&--para {
+			margin: 3rem 0 5rem 0;
+		}
+	}
+
+	.btn-container {
+		@include flex-row;
+	}
+
+	.btns {
+		background-color: blue;
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+		cursor: pointer;
+
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+
+		i {
+			transition: transform 0.2s;
+		}
+	}
+
+	.btn-yellow {
+		background-color: $color-yellow;
+		border: 0.2rem solid #ff9a01;
+		transition: all 0.2s;
+
+		&:hover {
+			background-color: rgba($color-yellow, 0.8);
+		}
+
+		&:hover i {
+			transform: translateX(0.5rem);
+		}
+	}
+
+	.btn-purple {
+		background-color: $color-purple;
+		border: 0.2rem solid #6100bb;
+		transition: all 0.2s;
+
+		&:hover {
+			background-color: rgba($color-purple, 0.8);
+		}
+
+		&:hover i {
+			transform: translateX(0.5rem);
+		}
+	}
+}
