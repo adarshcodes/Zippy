@@ -28,6 +28,10 @@ body li {
   list-style: none;
 }
 
+.heading-center {
+  text-align: center;
+}
+
 .header-section {
   background: url("../../assets/header.jpg") no-repeat;
   background-size: cover;
@@ -305,4 +309,111 @@ body li {
   font-size: 1.1rem;
   text-transform: uppercase;
   transition: all 0.2s;
+}
+
+.pricing {
+  padding: 0 25%;
+}
+
+.pricing .pricing-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7rem 0;
+}
+
+.pricing .pricing-card {
+  text-align: center;
+}
+
+.pricing .pricing-card .heading-plan {
+  margin-bottom: 2rem;
+}
+
+.pricing .pricing-card .membership-plan {
+  color: #bbbbbb;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing .pricing-card .offering-item {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.pricing .pricing-card-center {
+  border: solid 0.3rem #f1eeec;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 0 6rem;
+}
+
+.pricing .heading-pricing {
+  text-align: center;
+}
+
+.pricing .btn-buy {
+  background-color: #ffab2d;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+}
+
+.pricing .btn-buy:hover {
+  background-color: #541b8a;
+  color: #fff;
+}
+
+.team-cards {
+  padding: 0 25%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team-cards .team-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.team-cards .team-card .team-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.team-cards .team-card .team-img img {
+  width: 150%;
+  transform: translateX(-5rem);
+  transition: all 0.2s;
+}
+
+.team-cards .team-card .team-img:hover img {
+  transform: tranlateX(5rem) scale(1);
+  filter: blur(2px);
+}
+
+.team-cards .team-card .member-name {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.team-cards .team-card .member-designation {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #999;
 }

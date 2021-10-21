@@ -275,3 +275,111 @@
 	}
 }
 // End of Projects Section
+
+// Pricing Section
+.pricing {
+	@include super-padding;
+
+	.pricing-cards {
+		@include flex-row;
+		justify-content: space-between;
+		align-items: center;
+		margin: 7rem 0;
+	}
+
+	.pricing-card {
+		text-align: center;
+
+		.heading-plan {
+			margin-bottom: 2rem;
+		}
+
+		.membership-plan {
+			color: rgb(187, 187, 187);
+			font-size: 2.2rem;
+			margin-bottom: 2rem;
+		}
+
+		.offering-item {
+			margin-bottom: 1rem;
+			font-size: 1.5rem;
+			font-weight: 600;
+		}
+	}
+
+	.pricing-card-center {
+		border: solid 0.3rem #f1eeec;
+		border-top: 0;
+		border-bottom: 0;
+		padding: 0 6rem;
+	}
+
+	.heading-pricing {
+		text-align: center;
+	}
+
+	.btn-buy {
+		background-color: #ffab2d;
+		font-weight: 600;
+		font-size: 1.1rem;
+		text-transform: uppercase;
+		transition: all 0.2s;
+		margin-top: 2rem;
+		padding: 1rem 3rem;
+
+		&:hover {
+			background-color: #541b8a;
+			color: $color-white;
+		}
+	}
+}
+//End of Pricing Section
+
+// Team Section
+.team-cards {
+	@include super-padding;
+	margin-top: 5rem;
+	@include flex-row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+	.team-card {
+		@include flex-column;
+		justify-content: center;
+		align-items: center;
+		margin: 3rem;
+
+		.team-img {
+			width: 15rem;
+			height: 15rem;
+			border-radius: 100%;
+			overflow: hidden;
+
+			img {
+				width: 150%;
+				transform: translateX(-5rem);
+				transition: all 0.2s;
+			}
+
+			&:hover img {
+				transform: tranlateX(5rem) scale(1);
+				filter: blur(2px);
+			}
+		}
+
+		.member-name {
+			text-transform: uppercase;
+			font-size: 2rem;
+			margin: 2rem 0 1rem 0;
+		}
+
+		.member-designation {
+			font-size: 1.8rem;
+			text-transform: capitalize;
+			font-weight: 600;
+			color: #999;
+		}
+	}
+}
+// End of Team Section
