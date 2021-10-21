@@ -383,3 +383,52 @@
 	}
 }
 // End of Team Section
+
+// Newsletter Section
+.newsletter {
+	background: url("../../assets/newsletter.jpg") no-repeat;
+	background-size: cover;
+	margin-top: 8rem;
+	padding: 4rem 0;
+
+	.heading-newsletter {
+		color: $color-white;
+	}
+
+	.newsletter-form {
+		@include flex-row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 4rem;
+		margin-bottom: 5rem;
+	}
+
+	.email-input {
+		outline: none;
+		width: 40rem;
+		height: 5rem;
+		border: none;
+		font-size: 2.8rem;
+		padding: 1rem;
+		color: rgb(165, 165, 165);
+
+		&::placeholder {
+			color: rgba(214, 214, 214, 0.479);
+		}
+	}
+
+	.btn-signup {
+		border-radius: 0;
+		padding: 1.7rem 2rem;
+		background-color: #ffab2d;
+		text-transform: uppercase;
+		font-weight: 600;
+		transition: all 0.2s;
+
+		&:hover {
+			background-color: #541b8a;
+			color: $color-white;
+		}
+	}
+}
+// End of Newsletter

@@ -417,3 +417,51 @@ body li {
   font-weight: 600;
   color: #999;
 }
+
+.newsletter {
+  background: url("../../assets/newsletter.jpg") no-repeat;
+  background-size: cover;
+  margin-top: 8rem;
+  padding: 4rem 0;
+}
+
+.newsletter .heading-newsletter {
+  color: #fff;
+}
+
+.newsletter .newsletter-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+.newsletter .email-input {
+  outline: none;
+  width: 40rem;
+  height: 5rem;
+  border: none;
+  font-size: 2.8rem;
+  padding: 1rem;
+  color: #a5a5a5;
+}
+
+.newsletter .email-input::placeholder {
+  color: rgba(214, 214, 214, 0.479);
+}
+
+.newsletter .btn-signup {
+  border-radius: 0;
+  padding: 1.7rem 2rem;
+  background-color: #ffab2d;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.newsletter .btn-signup:hover {
+  background-color: #541b8a;
+  color: #fff;
+}
