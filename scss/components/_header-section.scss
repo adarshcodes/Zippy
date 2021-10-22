@@ -490,10 +490,78 @@
 }
 // End of Blog-section
 
+// Contact
+.contact {
+	.contact-container {
+		@include flex-row;
+		justify-content: center;
+	}
+
+	.contact-map {
+		width: 50%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.contact-form {
+		width: 50%;
+		background-color: #ffd64f;
+		padding: 5rem;
+
+		.heading-contact {
+			font-size: 5rem;
+			margin-bottom: 2rem;
+		}
+
+		form {
+			width: 50%;
+		}
+
+		.inputs {
+			@include flex-column;
+			margin-bottom: 1rem;
+
+			label {
+				font-weight: 600;
+				font-size: 1.7rem;
+				margin: 1rem 0;
+			}
+
+			input,
+			textarea {
+				border: none;
+				border: 0.2rem solid #ff9901b9;
+				padding: 1rem;
+				font-size: 1.6rem;
+			}
+
+			input {
+				height: 4rem;
+			}
+		}
+
+		.btn-send {
+			text-align: center;
+			padding: 1rem 0;
+			text-transform: uppercase;
+			font-size: 1.5rem;
+			font-weight: 600;
+			color: $color-white;
+			cursor: pointer;
+			margin-top: 2rem;
+		}
+	}
+}
+// End of Contact
+
 // footer-section
 .footer {
 	@include super-padding;
-	padding-top: 5rem;
+	padding-top: 6rem;
 	padding-bottom: 5rem;
 
 	.footer-container {
