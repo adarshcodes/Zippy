@@ -465,3 +465,100 @@ body li {
   background-color: #541b8a;
   color: #fff;
 }
+
+.blog {
+  padding: 0 25%;
+  padding-top: 7rem;
+  background-color: #fff;
+}
+
+.blog .blog-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.blog .blog-card {
+  width: 24rem;
+  text-align: center;
+}
+
+.blog .blog-card img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.blog .blog-card .heading-blog {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.blog .blog-card .blog-date {
+  margin: 1rem 0 2rem 0;
+  font-weight: 500;
+  color: #c4c4c4;
+}
+
+.blog .blog-card .blog-content {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.blog .blog-card .btn-read {
+  background-color: #ffab2d;
+  padding: 1.5rem 2.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.blog .blog-card .btn-read:hover {
+  background-color: #541b8a;
+  color: #fff;
+}
+
+.footer {
+  padding: 0 25%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer .footer-container .heading-footer {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer .footer-container .footer-list {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.footer .footer-container .footer-list li {
+  margin-bottom: 1rem;
+}
+
+.footer .footer-container .footer-follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer .footer-container .footer-follow div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
