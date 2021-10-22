@@ -335,60 +335,181 @@
 }
 //End of Pricing Section
 
-// Team Section
-.team-cards {
-	@include super-padding;
-	margin-top: 5rem;
-	@include flex-row;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+// Video Project
+.video-project {
+	background-color: #61497b;
+	padding: 8rem 0;
 
-	.team-card {
-		@include flex-column;
-		justify-content: center;
-		align-items: center;
-		margin: 3rem;
+	.heading-video {
+		color: $color-white;
+	}
 
-		.team-img {
-			width: 15rem;
-			height: 15rem;
-			border-radius: 100%;
-			overflow: hidden;
+	.videos-holder {
+		@include flex-row;
+	}
+
+	.video-container-first {
+		transform: translateX(-30%);
+	}
+
+	.video-container-center {
+		margin: 0 5rem;
+	}
+
+	.video-container-last {
+		transform: translateX(30%);
+	}
+
+	.video-container {
+		width: 35%;
+		margin-top: 4rem;
+
+		.video-img {
+			position: relative;
 
 			img {
-				width: 150%;
-				transform: translateX(-5rem);
-				transition: all 0.2s;
+				width: 100%;
 			}
 
-			&:hover img {
-				transform: tranlateX(5rem) scale(1);
-				filter: blur(2px);
+			.play-btn {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				cursor: pointer;
+
+				i {
+					font-size: 10rem;
+					color: $color-white;
+				}
 			}
 		}
 
-		.member-name {
-			text-transform: uppercase;
-			font-size: 2rem;
-			margin: 2rem 0 1rem 0;
-		}
-
-		.member-designation {
-			font-size: 1.8rem;
-			text-transform: capitalize;
+		.video-details {
+			@include flex-row;
+			justify-content: space-between;
+			font-size: 1.5rem;
 			font-weight: 600;
-			color: #999;
+			margin-top: 0.6rem;
+			color: $color-white;
+		}
+	}
+}
+
+// End of Video Project
+
+// Team Section
+.zippy-team {
+	padding-top: 8rem;
+	.team-cards {
+		@include super-padding;
+		margin-top: 5rem;
+		@include flex-row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-bottom: 8rem;
+
+		.team-card {
+			@include flex-column;
+			justify-content: center;
+			align-items: center;
+			margin: 3rem;
+
+			.team-img {
+				width: 15rem;
+				height: 15rem;
+				border-radius: 100%;
+				overflow: hidden;
+
+				img {
+					width: 150%;
+					transform: translateX(-5rem);
+					transition: all 0.2s;
+				}
+
+				&:hover img {
+					transform: tranlateX(5rem) scale(1);
+					filter: blur(2px);
+				}
+			}
+
+			.member-name {
+				text-transform: uppercase;
+				font-size: 2rem;
+				margin: 2rem 0 1rem 0;
+			}
+
+			.member-designation {
+				font-size: 1.8rem;
+				text-transform: capitalize;
+				font-weight: 600;
+				color: #999;
+			}
 		}
 	}
 }
 // End of Team Section
 
+// Life in Zippy Section
+.life {
+	background-color: #efefef;
+	@include super-padding;
+	padding-top: 7rem;
+	padding-bottom: 8rem;
+
+	.heading-life {
+		margin-bottom: 3rem;
+	}
+
+	.culture-container {
+		.culture-main-img {
+			width: 100%;
+			@include flex-row;
+			justify-content: center;
+			margin-bottom: 2rem;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.culture-slider {
+			@include flex-row;
+			justify-content: space-between;
+
+			.slider-img {
+				width: 10rem;
+
+				img {
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+
+		.arrow {
+			@include flex-row;
+			justify-content: center;
+			align-items: center;
+			width: 3rem;
+			background-color: #500199;
+			color: $color-white;
+			transition: all 0.2s;
+			cursor: pointer;
+
+			&:hover {
+				background-color: #481677;
+			}
+		}
+	}
+}
+// End in Zippy Section
+
 // Newsletter Section
 .newsletter {
 	background: url("../../assets/newsletter.jpg") no-repeat;
 	background-size: cover;
-	margin-top: 8rem;
 	padding: 4rem 0;
 
 	.heading-newsletter {

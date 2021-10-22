@@ -17,6 +17,7 @@ html {
 
 body {
   font-size: 2rem;
+  background-color: #fff;
 }
 
 body a {
@@ -369,7 +370,73 @@ body li {
   color: #fff;
 }
 
-.team-cards {
+.video-project {
+  background-color: #61497b;
+  padding: 8rem 0;
+}
+
+.video-project .heading-video {
+  color: #fff;
+}
+
+.video-project .videos-holder {
+  display: flex;
+  flex-direction: row;
+}
+
+.video-project .video-container-first {
+  transform: translateX(-30%);
+}
+
+.video-project .video-container-center {
+  margin: 0 5rem;
+}
+
+.video-project .video-container-last {
+  transform: translateX(30%);
+}
+
+.video-project .video-container {
+  width: 35%;
+  margin-top: 4rem;
+}
+
+.video-project .video-container .video-img {
+  position: relative;
+}
+
+.video-project .video-container .video-img img {
+  width: 100%;
+}
+
+.video-project .video-container .video-img .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.video-project .video-container .video-img .play-btn i {
+  font-size: 10rem;
+  color: #fff;
+}
+
+.video-project .video-container .video-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  color: #fff;
+}
+
+.zippy-team {
+  padding-top: 8rem;
+}
+
+.zippy-team .team-cards {
   padding: 0 25%;
   margin-top: 5rem;
   display: flex;
@@ -377,9 +444,10 @@ body li {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 8rem;
 }
 
-.team-cards .team-card {
+.zippy-team .team-cards .team-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -387,41 +455,94 @@ body li {
   margin: 3rem;
 }
 
-.team-cards .team-card .team-img {
+.zippy-team .team-cards .team-card .team-img {
   width: 15rem;
   height: 15rem;
   border-radius: 100%;
   overflow: hidden;
 }
 
-.team-cards .team-card .team-img img {
+.zippy-team .team-cards .team-card .team-img img {
   width: 150%;
   transform: translateX(-5rem);
   transition: all 0.2s;
 }
 
-.team-cards .team-card .team-img:hover img {
+.zippy-team .team-cards .team-card .team-img:hover img {
   transform: tranlateX(5rem) scale(1);
   filter: blur(2px);
 }
 
-.team-cards .team-card .member-name {
+.zippy-team .team-cards .team-card .member-name {
   text-transform: uppercase;
   font-size: 2rem;
   margin: 2rem 0 1rem 0;
 }
 
-.team-cards .team-card .member-designation {
+.zippy-team .team-cards .team-card .member-designation {
   font-size: 1.8rem;
   text-transform: capitalize;
   font-weight: 600;
   color: #999;
 }
 
+.life {
+  background-color: #efefef;
+  padding: 0 25%;
+  padding-top: 7rem;
+  padding-bottom: 8rem;
+}
+
+.life .heading-life {
+  margin-bottom: 3rem;
+}
+
+.life .culture-container .culture-main-img {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.life .culture-container .culture-main-img img {
+  width: 100%;
+}
+
+.life .culture-container .culture-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.life .culture-container .culture-slider .slider-img {
+  width: 10rem;
+}
+
+.life .culture-container .culture-slider .slider-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.life .culture-container .arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  background-color: #500199;
+  color: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.life .culture-container .arrow:hover {
+  background-color: #481677;
+}
+
 .newsletter {
   background: url("../../assets/newsletter.jpg") no-repeat;
   background-size: cover;
-  margin-top: 8rem;
   padding: 4rem 0;
 }
 
